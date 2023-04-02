@@ -75,7 +75,7 @@ Admin can:
 3) Assign the book to the user:
     - **POST** localhost:8080/api/users/{userId}/books?bookId={bookId}
 
-Admin can:
+User can:
 1) View purchased books:
     - **GET** localhost:8080/api/users/{userId}/books
 2) View details about the book:
