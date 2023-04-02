@@ -7,11 +7,11 @@
   (see **application.properties** from library/src/main/resources/application.properties).
   In KV store have to need these properties:
   1) spring.datasource.url=jdbc:h2:mem:library
-     spring.datasource.driverClassName=org.h2.Driver
-     spring.datasource.username=root
-     spring.datasource.password=root
-     spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
-     spring.jpa.hibernate.ddl-auto=update
+  2) spring.datasource.driverClassName=org.h2.Driver
+  3) spring.datasource.username=root
+  4) spring.datasource.password=root
+  5) spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+  6) spring.jpa.hibernate.ddl-auto=update
 - After setting up properties, go to directory /library and open terminal here
 - `./mvnw spring-boot:run`
 - After run library app go to directory /reader and open terminal here
