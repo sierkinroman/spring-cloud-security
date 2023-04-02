@@ -21,26 +21,9 @@ import java.util.Set;
 @RequiredArgsConstructor
 public class HomeController {
 
-    private final RestTemplate restTemplate;
-
     private final LibraryService libraryService;
 
     private final AuthToken authToken;
-
-//    public static final Duration REST_TEMPLATE_TIMEOUT = Duration.ofSeconds(30);
-//
-//    @Bean
-//    public RestTemplate restTemplate(RestTemplateBuilder restTemplateBuilder) {
-//        return restTemplateBuilder
-//                .setConnectTimeout(REST_TEMPLATE_TIMEOUT)
-//                .setReadTimeout(REST_TEMPLATE_TIMEOUT)
-//                .build();
-//    }
-//
-////        HttpHeaders headers = new HttpHeaders();
-////        headers.set("Authorization", "Basic YWRtaW46YWRtaW4=");
-////        HttpEntity<BookDetailsDto> entity = new HttpEntity<>(headers);
-////        ResponseEntity<BookDetailsDto> response = restTemplate.exchange("http://localhost:8080/api/books/1", HttpMethod.GET, entity, BookDetailsDto.class);
 
     @GetMapping
     public String showHomepage(Model model, HttpServletRequest request, HttpServletResponse response) {

@@ -20,7 +20,6 @@ public class RoleRepository {
                 .build(),
         Role.builder()
                 .id(RoleEnum.ADMIN)
-//                .privileges(List.of(PrivilegeEnum.USER_MANAGEMENT, PrivilegeEnum.BOOS_MANAGEMENT))
                 .privileges(List.of("USER_MANAGEMENT", "BOOK_MANAGEMENT"))
                 .build()
     )

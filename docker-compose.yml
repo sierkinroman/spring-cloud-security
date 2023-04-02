@@ -1,11 +1,10 @@
 version: "3"
 services:
   consul:
-    image: 'arm64v8/consul'
+    image: 'consul'
     container_name: consul
     ports:
       - '8500:8500'
-#    command: consul agent -server -ui -data-dir /consul/data -client=0.0.0.0
-    command: consul agent -server -ui -data-dir /consul/data -client=0.0.0.0
+    command: consul agent -server -ui -data-dir /consul/data -bind=0.0.0.0 -client 0.0.0.0
     volumes:
       - ./config-data:/consul/data
